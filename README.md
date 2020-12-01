@@ -18,12 +18,13 @@ project and not getting anywhere with the functionality.
 
 For this reason, we have provided a starter template. It comes with:
 
-* A web server ([ExpressJS](https://expressjs.com/))
-* A testing library ([Jest](https://jestjs.io/))
-* A web feature testing set up ([Puppeteer](https://pptr.dev/) and
+- A web server ([ExpressJS](https://expressjs.com/))
+- A testing library ([Jest](https://jestjs.io/))
+- A web feature testing set up ([Puppeteer](https://pptr.dev/) and
   [Jest-Puppeteer](https://github.com/smooth-code/jest-puppeteer))
-* A database and ORM set up ([Sequelize](https://sequelize.org/) and
+- A database and ORM set up ([Sequelize](https://sequelize.org/) and
   [Sqlite](https://www.sqlite.org/index.html))
+- Linting & formatting ([Prettier](https://prettier.io/))
 
 And a straightforward set of examples to show you how they all connect up.
 
@@ -51,6 +52,9 @@ Have fun!
 
 # Note that you'll need to restart it when you change your code
 # (Except sometimes you won't — try to figure out why!)
+
+# And don't forget to run the linter before you commit your code!
+; npm run lint
 ```
 
 ## Language
@@ -60,7 +64,7 @@ code samples you see online won't work here. For example, if you see code like
 this:
 
 ```javascript
-import Something from 'file';
+import Something from "file";
 ```
 
 This uses something called ECMAScript Modules ('ECM'), which node doesn't
@@ -68,14 +72,16 @@ support natively at this time. You could add something called a 'babel plugin'
 to make this work if you want to! If not, here's a translation sheet:
 
 ```javascript
-import Something from 'file';
+import Something from "file";
 // Converts to:
-var Something = require('file');
+var Something = require("file");
 
-import { Something } from 'file';
+import { Something } from "file";
 // Converts to:
-var { Something } = require('file');
+var { Something } = require("file");
 ```
+
+## Fo
 
 ## Debugging
 
@@ -96,17 +102,17 @@ Here are three ways you can get more visibility in this codebase:
 ```javascript
 // Feel free to paste this into a test file to see what it does.
 
-it('debugs', async () => {
+it("debugs", async () => {
   // First we'll trigger an error by going to a page that doesn't exist.
-  await page.goto('http://localhost:4444/notarealpage');
+  await page.goto("http://localhost:4444/notarealpage");
 
   // This line writes a screenshot of what your tests are 'seeing'
   // to `tmp/screenshot.png`
-  await page.screenshot({ path: 'tmp/screenshot.png', fullPage: true });
+  await page.screenshot({ path: "tmp/screenshot.png", fullPage: true });
 
   // These two lines writes a copy of the HTML of the page to `tmp/page.html`
   var contents = await page.content();
-  fs.writeFileSync('tmp/page.html', contents);
+  fs.writeFileSync("tmp/page.html", contents);
   // You can now run `open tmp/page.html` to see it in the web browser.
 });
 ```

@@ -1,12 +1,10 @@
-const { Model, DataTypes } = require('sequelize');
+const { Model, DataTypes } = require("sequelize");
 
-class User extends Model {
-
-}
+class User extends Model {}
 
 var userFields = {
   username: DataTypes.STRING,
-  birthday: DataTypes.DATE
-}
+  birthday: DataTypes.DATE,
+};
 
-module.exports = { User, userFields }
+module.exports = { User, userFields };
