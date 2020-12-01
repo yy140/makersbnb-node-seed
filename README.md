@@ -47,6 +47,8 @@ Have fun!
 
 # And this starts the web server!
 ; npm serve
+# Your server is now running on http://localhost:3000
+
 # Note that you'll need to restart it when you change your code
 # (Except sometimes you won't — try to figure out why!)
 ```
