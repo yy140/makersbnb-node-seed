@@ -19,15 +19,4 @@ describe('MakersBnB Index', () => {
       await expect(page).toMatchElement('p', { text: 'There are 0 users signed up.' });
     });
   });
-
-  // it('debugs', async () => {
-  //   await page.goto('http://localhost:4444/notarealpage');
-  //
-  //   // Writes a screenshot to tmp/screenshot.png
-  //   await page.screenshot({ path: 'tmp/screenshot.png', fullPage: true });
-  //
-  //   // Writes a copy of the HTML to tmp/page.html
-  //   var contents = await page.content();
-  //   fs.writeFileSync('tmp/page.html', contents);
-  // });
 });
