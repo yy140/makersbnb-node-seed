@@ -112,6 +112,7 @@ it("debugs", async () => {
 
   // These two lines writes a copy of the HTML of the page to `tmp/page.html`
   var contents = await page.content();
+  const fs = require("fs");
   fs.writeFileSync("tmp/page.html", contents);
   // You can now run `open tmp/page.html` to see it in the web browser.
 });
