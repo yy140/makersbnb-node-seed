@@ -81,8 +81,6 @@ import { Something } from "file";
 var { Something } = require("file");
 ```
 
-## Fo
-
 ## Debugging
 
 This repository is set up with support for getting visibility! If you want to
