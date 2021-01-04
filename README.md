@@ -47,7 +47,7 @@ Have fun!
 # You'll need to do this whenever you change the database models
 
 # And this starts the web server!
-; npm serve
+; npm start
 # Your server is now running on http://localhost:3000
 
 # Note that you'll need to restart it when you change your code
