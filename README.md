@@ -117,3 +117,29 @@ it("debugs", async () => {
 ```
 
 Other than that, don't forget to use `console.log`!
+
+## Architecture
+
+If you're doing this exercise in the middle of the Makers immersive course, you
+might have recently heard about the Model-View-Controller architecture. This
+project uses that architecture too.
+
+As mentioned above, one value of the Javascript community is being
+_unopinionated_ — there's more than one way to do it and the programmer gets to
+choose. This means node projects often take a more flexible approach to MVC,
+sometimes splitting bits of the architecture or fusing them together.
+
+For example, in [React](https://reactjs.org/) projects the server might only
+appear to have a Model and a Controller, while the React client-side code might
+combine of data manipulation and view code, sometimes called a
+Model-View-ViewModel (MVVM) architecture.
+
+This project doesn't use MVVM, it uses MVC and you can identify the following
+MVC components:
+
+* The Models in `/models`.
+* The Controllers in `/routes`.
+* The Views in `/views`.
+
+If you feel confident and you'd like to try grow the architecture into another
+form like MVVM, do consider this your challenge!
