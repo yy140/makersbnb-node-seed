@@ -1,1 +1,4 @@
 node_modules
+tmp/*.html
+tmp/*.png
+db/*.db
