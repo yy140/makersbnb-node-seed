@@ -91,10 +91,10 @@ Here are three ways you can get more visibility in this codebase:
 1. **Turn on database logging.**  
    Look in `database.js` for a line to uncomment to see exactly what database
    queries are being executed.
-2. **Turn on web-server logging in tests.**
+2. **Turn on web-server logging in tests.**  
    Look in `jest-puppeteer.config.js` for a line to uncomment to see exactly
    what web requests are being called in your tests.
-3. **Use feature testing debugging tools.**
+3. **Use feature testing debugging tools.**  
    See below.
 
 ```javascript
@@ -118,7 +118,7 @@ it("debugs", async () => {
 
 Other than that, don't forget to use `console.log`!
 
-## Architecture
+## Architecture
 
 If you're doing this exercise in the middle of the Makers immersive course, you
 might have recently heard about the Model-View-Controller architecture. This
