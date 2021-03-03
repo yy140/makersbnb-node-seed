@@ -7,4 +7,8 @@ router.get("/", async function (req, res, next) {
   res.render("signup", { title: "Sign Up" });
 });
 
+router.get("/new", async function (req, res, next) {
+  res.render("new");
+})
+
 module.exports = router;
