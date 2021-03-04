@@ -4,7 +4,10 @@ class User extends Model {}
 
 var userFields = {
   username: DataTypes.STRING,
-  birthday: DataTypes.DATE,
+  email: DataTypes.STRING,
+  password: DataTypes.STRING
+
 };
 
 module.exports = { User, userFields };
+ 
