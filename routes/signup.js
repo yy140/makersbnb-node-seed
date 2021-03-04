@@ -29,23 +29,24 @@ router.get("/new", async function (req, res, next) {
 
 // })
 router.post('/new', function(req, res) {
-  if (!req.body.email || !req.body.password) {
+  if (!req.body.email || !req.body.password || !req.body.username) {
       res.status(400).send({
           status: false,
-          message: ''
+          message: 'Please input in all fields'
       });
   } else {
       User.create({
           username: req.body.username,
           email: req.body.email,
           password: req.body.password,
+ 
       }).then((User) => res.status(201).send(User)).catch((error) => {
           console.log(error);
           res.status(400).send(error);
           
       });
-  }
-  res.redirect("/signup"); 
-  });
+  }     res.redirect("/signup"); 
+  
+})
 
 module.exports = router;
