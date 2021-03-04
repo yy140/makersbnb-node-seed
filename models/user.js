@@ -3,8 +3,8 @@ const { Model, DataTypes } = require("sequelize");
 class User extends Model {}
 
 var userFields = {
-  username: DataTypes.STRING,
-  email: DataTypes.STRING,
+  username: DataTypes.STRING, 
+  email: DataTypes.STRING, 
   password: DataTypes.STRING
 
 };
