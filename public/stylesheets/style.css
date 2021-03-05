@@ -67,6 +67,7 @@ top: 50px;
   transform: translateY(-50%);
   text-align: center;
   color: white;
+  font-family: 'lato' ,sans-serif;
 
 }
 .content h1{
@@ -156,4 +157,58 @@ width: 240px;
   transform: translateY(-50%);
   text-align: center;
   color: black;
+}
+
+/* styling for signup page*/
+.back2{
+  height: 65vh;
+  /*height: 80%;*/
+  width: 85%;
+  position: absolute;
+ margin: 10%;
+}
+.form2{/* styling for submit button*/
+  position: absolute;
+  top:70%;
+  left:70%;
+  width: 200px;
+  
+
+}
+.loginbox{
+  width: 320px;
+  height: 300px;
+  border-radius: 0%;
+  background:gray;
+  color: #fff;
+  opacity: 0.5;
+  top: 30%;
+  left: 65%;
+  position: absolute;
+  transform: translate(-50%,) -50%;
+  box-shadow: 0 0 20px 2px rgba(0,0,0,0.5);
+}
+.avatar{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -10%;
+  left: 35%;
+}
+h2{
+  font-family: 'Times New Roman', Times, serif;
+  position: absolute;
+  top: 40%;
+  left: 70%;
+  color: white;
+}
+.fill{
+  position: relative;
+  left:70%;
+  top: 200px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
 }
