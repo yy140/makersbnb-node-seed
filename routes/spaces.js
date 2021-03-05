@@ -5,8 +5,9 @@ var router = express.Router();
 
 router.get("/", async function (req, res, next) {
   var currentUser = req.session.user.username;
-  //const space = await Space.findAll();
-  res.render("spaces", { currentUser});
+  const space = await Space.findAll();
+  console.log(space);
+  res.render("spaces", { currentUser, space });
 })
 // User.findOne( { where: {username: username } }) 
 //       .then(function (user) {

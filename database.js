@@ -1,6 +1,6 @@
 const { Sequelize, DataTypes } = require("sequelize");
 var { User, userFields } = require("./models/user.js");
-
+var { Space, spaceFields } = require("./models/space.js");
 const database = new Sequelize(
   "sqlite:db/database." + process.env.NODE_ENV + ".db",
   {
@@ -10,5 +10,6 @@ const database = new Sequelize(
 );
 
 User.init(userFields, { sequelize: database, modelName: "user" });
+Space.init(spaceFields, { sequelize: database, modelName: "space" });
 
-module.exports = { User, database };
+module.exports = { User, Space, database };
