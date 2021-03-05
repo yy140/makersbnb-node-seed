@@ -8,7 +8,6 @@ describe("Sign in", () => {
     await page.$eval('#password', el => el.value = '1234');
    // await page.type('#password', '1234');
     await page.click('input[type="submit"]');
-    await page.goto("http://localhost:4444/spaces");
     await expect(page).toMatchElement("p", { text: "Available spaces"});
   });
   });
