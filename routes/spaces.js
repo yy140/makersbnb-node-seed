@@ -5,10 +5,23 @@ var router = express.Router();
 
 router.get("/", async function (req, res, next) {
   var currentUser = req.session.user.username;
-  const space = await Space.findAll();
-  console.log(space);
-  res.render("spaces", { currentUser, space });
-})
+  
+  Space.findAll().then(function (space)  { 
+    var space = space.name
+    res.render("spaces", { currentUser, space });
+       })
+         
+      })
+
+
+
+// const space = await Space.findAll();
+//   .then()
+//   console.log(space);
+//   var name = space.name
+
+// })Project.findAll().then(projects => {
+  // projects will be an array of all Project instances
 // User.findOne( { where: {username: username } }) 
 //       .then(function (user) {
 //            if (!user) {
