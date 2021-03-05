@@ -19,6 +19,7 @@ router.post('/new', function(req, res) {
           message: 'Please input in all fields'
       });
   } else {
+    
       User.create({
           username: req.body.username,
           email: req.body.email,
